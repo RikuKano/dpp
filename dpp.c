@@ -1020,7 +1020,7 @@ problemo:
         nid = EC_GROUP_get_curve_name(signgroup);
         sofar = snprintf(confobj, sizeof(confobj),
                          "{\"wi-fi_tech\":\"infra\",\"discovery\":{\"ssid\":\"goaway\",\"op_cl\":81,"
-                         "\"ch_list\":[{\"ch\":11}]},\"cred\":{\"akm\":\"dpp\",\"signedConnector\":"
+                         "\"ch_list\":[{\"ch\":11}]},\"cred\":{\"akm\":\"psk\",\"pass\":\"test\",\"signedConnector\":"
                          "\"%s\",\"csign\":{\"kty\":\"EC\",\"crv\":\"%s\","
                          "\"x\":\"%s\",\"y\":\"%s\",\"kid\":\"%s\"},"
                          "\"expiry\":\"2020-01-01T01:01:01\"}}",
