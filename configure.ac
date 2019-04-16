@@ -39,7 +39,7 @@ AC_CHECK_FUNCS([bzero gethostname gettimeofday memset select socket strstr strto
 AC_MSG_CHECKING([enable-brainpool])
 AC_ARG_ENABLE(brainpool,
 	AC_HELP_STRING([--enable-brainpool],[Has Brainpool support]) [],
-[ case "enableval" in
+[ case "$enableval" in
   yes)
 	AC_MSG_RESULT(yes)
 	CFLAGS="$CFLAGS -DHAS_BRAINPOOL"
